@@ -6,14 +6,12 @@ Future<String> createOrderMessage() async {
 
 Future<String> fetchUserOrder() {
 // có thể ở đây sẽ mất rất nhiều thời gian
-//   return Future.delayed(
-//     Duration(seconds: 10),
-//     () => 'Large Latte',
-//   );
-
-  return Future.sync(
+  return Future.delayed(
+    Duration(seconds: 10),
     () => 'Large Latte',
   );
+
+
 
   //return 'Large Latte';
 }
